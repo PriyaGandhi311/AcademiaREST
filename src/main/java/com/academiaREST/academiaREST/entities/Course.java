@@ -5,15 +5,17 @@ public class Course {
     private String name;
     private String description;
     private String professor;
+    private long numberOfStudents;
     
     public Course(){
         super();
     }
-    public Course(long id, String name, String description, String professor) {
+    public Course(long id, String name, String description, String professor, long numberOfStudents) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.professor = professor;
+        this.numberOfStudents = numberOfStudents;
     }
 
     public long getId() {
@@ -47,6 +49,12 @@ public class Course {
     public void setProfessor(String professor) {
         this.professor = professor;
     }
+    public long getnumberOfStudents() {
+        return numberOfStudents;
+    }
+    public void setnumberOfStudents(long numberOfStudents) {
+        this.numberOfStudents = numberOfStudents;
+    }
 
     @Override
     public String toString() {
@@ -56,6 +64,7 @@ public class Course {
         sb.append(", name=").append(name);
         sb.append(", description=").append(description);
         sb.append(", professor=").append(professor);
+        sb.append(", numberOfStudents=").append(numberOfStudents);
         sb.append('}');
         return sb.toString();
     }

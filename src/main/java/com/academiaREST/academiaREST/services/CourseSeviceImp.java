@@ -15,7 +15,7 @@ public class CourseSeviceImp implements CourseService {
     public CourseSeviceImp (){
         courses = new ArrayList<>();
         courses.add( new Course(001, "Spring Boot Course", 
-        "Detail Course on Spring Boot using REST API", "ExpertLearn"));
+        "Detail Course on Spring Boot using REST API", "ExpertLearn", 10));
     }
     
 
@@ -49,6 +49,16 @@ public class CourseSeviceImp implements CourseService {
                 c.setName(course.getName());
                 c.setDescription(course.getDescription());
                 c.setProfessor(course.getProfessor());
+                c.setnumberOfStudents(course.getnumberOfStudents());
+            }
+        }
+    }
+
+    @Override
+    public void incrementStudent(Long courseId) {
+        for(Course c : courses){
+            if(c.getId() == courseId){
+                c.setnumberOfStudents(c.getnumberOfStudents() + 1);
             }
         }
     }
