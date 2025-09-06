@@ -8,7 +8,7 @@ import java.util.List;
 // import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.PutMapping;
 
-// import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RestController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -29,6 +29,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import com.academiaREST.academiaREST.entities.Student;
 import com.academiaREST.academiaREST.services.StudentService;
 
+@RestController
 @Tag(name = "Student Management", description = "CRUD operations for student management")
 public class StudentController {
 @Autowired

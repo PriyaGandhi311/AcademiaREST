@@ -21,6 +21,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import com.academiaREST.academiaREST.entities.Course;
 import com.academiaREST.academiaREST.services.CourseService;
 
+@RestController
 @Tag(name = "Course Management", description = "CRUD operations for course management")
 public class CourseController {
 
