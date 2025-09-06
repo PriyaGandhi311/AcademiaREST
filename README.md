@@ -2,7 +2,7 @@
 
 AcademiaREST is a RESTful web service built with Java and Maven, designed to provide a backend for managing course data. It implements common CRUD (Create, Read, Update, Delete) operations via REST API endpoints.
 
-![Bonded Context](/src/main/resources/static/bonded-context.png)
+<img src="/src/main/resources/static/bonded-context.png" alt="Bonded Context" width="600" height="500"/>
 
 ## Features
 - **OpenAPI** annotations (Swagger) for automatic API documentation
@@ -24,9 +24,9 @@ If springdoc or Swagger UI is configured, the API docs are usually available at:
 - Yaml: /api-docs.yaml
 
 ## Endpoints
-![Student Management](src/main/resources/static/student-management.png)
-![Course Management](/src/main/resources/static/course-management.png)
-![Professor Management](/src/main/resources/static/professor-management.png)
+<img src="src/main/resources/static/student-management.png" alt="Student Management" width="600" height="500"/>
+<img src="/src/main/resources/static/course-management.png" alt="ourse Management" width="600" height="500"/>
+<img src="/src/main/resources/static/professor-management.png" alt="Professor Management" width="600" height="500"/>
 
 ## Development notes
 - Services are in-memory. Replace with repository/DB for persistence.
