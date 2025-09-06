@@ -1,10 +1,23 @@
 package com.academiaREST.academiaREST.entities;
+import io.swagger.v3.oas.annotations.media.Schema;
+import nonapi.io.github.classgraph.json.Id;
 
 public class Course {
+    
+    @Id
+    @Schema(description = "Course ID", example = "1", accessMode = Schema.AccessMode.READ_ONLY)
     private long id;
+
+    @Schema(description = "Course name", example = "Mathematics", required = true)
     private String name;
+
+    @Schema(description = "Course description", example = "An introductory course to Mathematics", required = true)
     private String description;
+
+    @Schema(description = "Professor's name", example = "Dr. Smith", required = true)
     private String professor;
+
+    @Schema(description = "Number of students enrolled", example = "30", accessMode = Schema.AccessMode.READ_ONLY)
     private long numberOfStudents;
     
     public Course(){
